@@ -42,7 +42,7 @@ const styles=StyleSheet.create({
     },
     buttonText: {
         fontSize: 25,
-        fontFamily: 'UbuntuBold',
+        fontFamily: 'RowdiesRegular',
         color: '#f6f6f6'
     }, 
     image: {
