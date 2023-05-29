@@ -1,7 +1,18 @@
 # STARdy
-STARdy App for Orbital 2023 
+STARdy App for Orbital 2023 (IOS Version/Run on MacOS)
 
-NOTE: please clone and open the repository with ios simulator (iPhone 14 Pro Max -iOS 16.4) when using Xcode to do so. 
+Instructions on how to test out:
+- Make sure you have xcode, expo, and NodeJS installed
+- Run `xcode-select --install` to install xcode
+- Run `npx expo -h` to install expo.
+- Run  `curl https://get.volta.sh | bash
+source ~/.zshrc
+volta install node@18` to install NodeJS
+
+- Run `git clone https://github.com/AriellaCallista/STARDY-MS1.git` on your terminal.
+- Go to  `STARDY-MS` directory.
+- Run `npx expo start`
+
 
 Team Name: 
 Stardy
