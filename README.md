@@ -6,11 +6,11 @@ Instructions on how to test out:
 - Run `xcode-select --install` to install xcode
 - Run `npx expo -h` to install expo.
 - Run  
-      ```
-      curl https://get.volta.sh | bash 
-      source ~/.zshrc 
-      volta install node@18
-       ``` 
+```
+curl https://get.volta.sh | bash 
+source ~/.zshrc 
+volta install node@18
+``` 
    to install NodeJS
 
 - Run `git clone https://github.com/AriellaCallista/STARDY-MS1.git` on your terminal.
