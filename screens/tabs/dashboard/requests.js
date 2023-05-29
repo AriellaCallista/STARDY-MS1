@@ -27,11 +27,12 @@ const Requests = () => {
     return (
         <View style={{
             //backgroundColor: 'white',
-            height: 285,
+            //flex: 1,
+            height: 430,
             marginHorizontal: 15,
             paddingHorizontal: 6,
-            paddingVertical: 18,
-            marginTop: 10
+            //paddingVertical: 18,
+            marginTop: 17
         }}>
             <View style={{
                 //backgroundColor: 'pink',
@@ -56,6 +57,7 @@ const Requests = () => {
                 //backgroundColor: 'white', 
                 justifyContent: 'space-between',
                 overflow: 'scroll',
+                height: 350
 
                 //alignItems: 'center'
             }}>
@@ -71,6 +73,7 @@ const Requests = () => {
                                 padding: 10,
                                 paddingBottom: -10,
                                 //paddingTop: -10,
+                                //height: 100
                             }}>
                                 <View style={{
                                     //backgroundColor: 'blue',

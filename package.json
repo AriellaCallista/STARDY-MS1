@@ -9,7 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@react-native-picker/picker": "^2.4.10",
+    "@react-native-picker/picker": "2.4.8",
     "@react-navigation/bottom-tabs": "^6.5.7",
     "@react-navigation/material-bottom-tabs": "^6.2.15",
     "@react-navigation/material-top-tabs": "^6.6.2",
@@ -20,11 +20,11 @@
     "expo-status-bar": "~1.4.4",
     "firebase": "^9.22.0",
     "react": "18.2.0",
-    "react-native": "0.71.7",
+    "react-native": "0.71.8",
     "react-native-elements": "^3.4.3",
     "react-native-gesture-handler": "~2.9.0",
     "react-native-image-picker": "^5.3.1",
-    "react-native-pager-view": "^6.2.0",
+    "react-native-pager-view": "6.1.2",
     "react-native-picker-select": "^8.0.4",
     "react-native-progress": "^5.0.0",
     "react-native-reanimated": "~2.14.4",

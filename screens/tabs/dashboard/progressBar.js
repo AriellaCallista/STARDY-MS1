@@ -12,7 +12,7 @@ const goToLeaderboard = () => {
 
 const ProgressBar = () => {
 
-    const [width, setWidth] = useState('75%');
+    const [width, setWidth] = useState('90%');
 
     return (
         <SafeAreaView style={{
@@ -20,7 +20,7 @@ const ProgressBar = () => {
             marginTop: -20,
             flexDirection: 'row',
             justifyContent: 'space-evenly',
-            alignItems: 'center',
+            alignItems: 'flex-start',
             top: 10,
         }}>
             
@@ -31,8 +31,8 @@ const ProgressBar = () => {
                 fontSize: 16,
                 //color: '#007788',
                 //marginTop: -10,
-                left: 10,
-                top: 15,
+                left: 9,
+                top: 10,
             }}>Level 2</Text>
 
         
@@ -45,6 +45,8 @@ const ProgressBar = () => {
                             backgroundColor: '#007788',
                             borderRadius: 20,
                             width: width,
+                            //top: -15,
+                           // position: 'absolute'
                            
                         }}></View>
                     </View>
@@ -56,8 +58,8 @@ const ProgressBar = () => {
                 //backgroundColor: 'white',
                 justifyContent: 'center',
                 alignItems: 'center',
-                top: -5,
-                left: 10
+                top: -40,
+                //left:0
 
             }}>
                 <TouchableOpacity onPress={goToLeaderboard}>
@@ -91,6 +93,9 @@ const styles=StyleSheet.create({
         justifyContent: 'flex-start',
         backgroundColor: 'rgba(0,0,0,0.1)',
         borderRadius: 20,
+        //position: 'absolute',
+        top: -15,
+        width: 280
         
     },
     container: {

@@ -37,7 +37,7 @@ import { FontAwesome5 } from '@expo/vector-icons'
 
 // )
 
-export default function mainTab() {
+export default function MainTab() {
 
     const MainTab = createMaterialBottomTabNavigator();
 
@@ -46,6 +46,8 @@ export default function mainTab() {
               //labeled={false}
               barStyle={{ 
                 backgroundColor: '#007788',
+                height: 100
+                //paddingBottom: -10
                 // position: 'absolute',
                 // marginTop: -20,
                 // bottom: 15,

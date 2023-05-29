@@ -14,55 +14,17 @@ import { ref, uploadBytes, listAll, getDownloadURL } from 'firebase/storage';
 
 import ProfileCard from './tabs/dashboard/profileCard';
 
+import { authentication } from '../config';
 
 export default function Profile({navigation}) {
 
-  // const [image, setImage] = useState(null);
-
-  // const pickImage = async () => {
-  //   let result = await ImagePicker.launchImageLibraryAsync({
-  //     mediaTypes: ImagePicker.MediaTypeOptions.All,
-  //     allowsEditing: true,
-  //     aspect: [4, 3],
-  //     quality: 0
-  //   });
-
-  //   const url = uploadImage(result.assets[0].uri);
-
-  //   if (!result.canceled) {
-  //     setImage(result.assets[0].uri);
-  //   } 
-  // };
-
-  // const uploadImage = async (uri) => {
-  //   const blob = await new Promise((resolve, reject) => {
-  //     const xhr = new XMLHttpRequest();
-  //     xhr.onload = function () {
-  //       resolve(xhr.response);
-  //     };
-  //     xhr.onerror = function (e) {
-  //       console.log(e);
-  //       reject(new TypeError("Network request failed"));
-  //     };
-  //     xhr.responseType = "blob";
-  //     xhr.open("GET", uri, true);
-  //     xhr.send(null);
-  //   });
-
-  //   try {
-  //     const storageRef = ref(storage, `image/image-${Date.now()}`);
-  //      const result = await uploadBytes(storageRef, blob);
-  //     blob.close();
-  //     return await getDownloadURL(storageRef);
-  //   } catch (error) {
-  //     Alert.alert(`Error : ${error}`);
-  //   }
-  
-  // }
-
+  const [name, setName] = useState(''); 
+  const [gender, setGender] = useState(''); 
+  const [major, setMajor] = useState(''); 
+  const [year, setYear] = useState(''); 
 
   const pressHandler = () => {
-    setDoc(doc(db, "users", "user"), {
+    setDoc(doc(db, "users", authentication.currentUser.email), {
       name: name,
       gender: gender,
       major: major,
@@ -76,11 +38,6 @@ export default function Profile({navigation}) {
     });
     navigation.navigate('MainTab');
   }
-
-  const [name, setName] = useState(''); 
-  const [gender, setGender] = useState(''); 
-  const [major, setMajor] = useState(''); 
-  const [year, setYear] = useState(''); 
 
 
 
@@ -212,16 +169,16 @@ const styles = StyleSheet.create({
     backgroundColor: '#f6f6f6',
     //borderWidth: 0.5,
     borderColor: '#777',
-    padding: 8,
+    padding: 10,
     margin: 10,
-    width: 300,
+    width: 350,
     marginBottom: 20,
     //borderRadius: 8
   }, 
   logo: {
-    width: 100,
-    height: 100,
-    borderRadius: 100 / 2,
+    width: 150,
+    height: 150,
+    borderRadius: 150 / 2,
     backgroundColor: '#007788', 
     alignItems: 'center',
     marginBottom: 20,
@@ -232,16 +189,16 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
     backgroundColor: '#007788',
     position: 'centre',
-    left: 108,
+    left: 110,
     marginTop: 20,
-    width: 100,
-    height: 53
+    width: 150,
+    height: 63
   },
   buttonText: {
     color: '#f6f6f6',
     fontWeight: 'bold',
     fontFamily: 'RowdiesRegular', 
-    fontSize: 20,
+    fontSize: 25,
     textAlign: 'center',
   },
 });
@@ -249,7 +206,7 @@ const styles = StyleSheet.create({
 const pickerSelectStyles = StyleSheet.create({
   inputIOS: {
     //fontSize: 14,
-    padding: 8,
+    padding: 10,
     //borderWidth: 0.5,
     borderColor: '#777',
     //borderRadius: 8,
@@ -260,9 +217,9 @@ const pickerSelectStyles = StyleSheet.create({
   },
   inputAndroid: {
       fontSize: 16,
-      paddingHorizontal: 10,
-      paddingVertical: 8,
-      borderWidth: 0.5,
+      paddingHorizontal: 12,
+      paddingVertical: 10,
+      //borderWidth: 0.5,
       borderColor: 'purple',
       borderRadius: 8,
       color: 'black',

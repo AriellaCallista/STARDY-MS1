@@ -9,7 +9,7 @@ import ProgressBar from './progressBar';
 
 import { storage } from '../../../config';
 import { ref, uploadBytes, listAll, getDownloadURL } from 'firebase/storage';
-import { db } from '../../../config';
+import { db, authentication } from '../../../config';
 
 import { doc, getDoc, get, connectFirestoreEmulator} from "firebase/firestore";
 import { set } from 'react-native-reanimated';
@@ -46,7 +46,7 @@ const ProfileCard = ({ nav }) => {
     const[gender, setGender] = useState('F')
     const[url, setURL] = useState(null);
 
-    const docRef = doc(db, "users", "user");
+    const docRef = doc(db, "users", authentication.currentUser.email);
     // const docSnap = getDoc(docRef);
 
     getDoc(docRef)
@@ -59,15 +59,7 @@ const ProfileCard = ({ nav }) => {
             console.log(url);
             // console.log(doc.get('name'));
             // console.log(doc.data(), doc.id)
-        })
-
-
-    // docSnap.gender
-    
-    //     name = docSnap.get('name')
-    //     major = docSnap.get('major')
-    //     year = docSnap.get('year')
-    //     gender = docSnap.get('gender')    
+        })   
 
     return (
         

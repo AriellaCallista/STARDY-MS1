@@ -46,23 +46,26 @@ export default function Buttons({ nav }) {
 
 const styles=StyleSheet.create({
     container: {
-        height: 70,
+        height: -30,
         marginHorizontal: 15,
         paddingHorizontal: 6,
         paddingVertical: 18,
         flexDirection: 'row', 
         justifyContent: 'space-between',
-        alignItems: 'center'
+        alignItems: 'center',
+        //backgroundColor: 'pink',
+        marginTop: -50
+        
 
     },
     button: {
         backgroundColor: '#007788',
-        width: 90,
-        height: 50,
+        width: 100,
+        height: 60,
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 12,
-        marginBottom: -10
+        //marginBottom: 
     },
     text: {
         color: '#f6f6f6',

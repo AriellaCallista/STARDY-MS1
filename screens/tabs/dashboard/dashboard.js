@@ -23,7 +23,8 @@ export default function Dashboard({ navigation }) {
     return (
         <SafeAreaView style={{
             flex: 1,
-            backgroundColor: '#eef1e1'
+            backgroundColor: '#eef1e1',
+            paddingTop: 10
         }}>
             <View style={{flex: 1}}>
                 <ProfileCard nav={navigation} />

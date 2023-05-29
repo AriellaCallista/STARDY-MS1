@@ -6,7 +6,7 @@ import { StyleSheet, View, Text, TouchableOpacity, Alert, Image } from 'react-na
 export default function Welcome({ navigation }) {
 
     const pressHandler = () => {
-        navigation.navigate('Profile');
+        navigation.navigate('Login');
     }
 
     return (
@@ -29,9 +29,9 @@ const styles=StyleSheet.create({
     titleText: {
         color: '#007788',
         fontFamily: 'PressStart',
-        fontSize: 45,
+        fontSize: 52,
         position: 'absolute',
-        top: '20%'        
+        top: '25%'        
     }, 
     button: {
         padding: 19,
@@ -41,15 +41,15 @@ const styles=StyleSheet.create({
         borderRadius: 15
     },
     buttonText: {
-        fontSize: 25,
+        fontSize: 32,
         fontFamily: 'RowdiesRegular',
         color: '#f6f6f6'
     }, 
     image: {
-        width: 200,
-        height: 200,
+        width: 250,
+        height: 250,
         position: 'absolute',
-        top: '30%'
+        top: '34%'
     }
 })
     

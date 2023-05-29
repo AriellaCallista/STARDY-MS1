@@ -4,12 +4,13 @@ import { useFonts } from 'expo-font';
 import Welcome from './screens/welcome';
 import Profile from './screens/profile';
 import Dashboard from './screens/tabs/dashboard/dashboard';
-import mainTab from './navigation/mainTab';
+import MainTab from './navigation/mainTab';
 import Encouragement from './screens/tabs/dashboard/encouragement';
 import Notes from './screens/tabs/dashboard/notes';
 import Todo from './screens/tabs/dashboard/todo';
 import Home from './screens/home';
 import EditProfile from './screens/tabs/dashboard/editProfile';
+import Login from './screens/login';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -54,9 +55,9 @@ export default function App() {
           )
         })}>
           <Stack.Screen name='Welcome' component={Welcome} options={{ headerShown: false }}/>
+          <Stack.Screen name='Login' component={Login} options={{ headerShown: false }}/>
           <Stack.Screen name='Profile' component={Profile} options={{ headerShown: false }}/>
-          <Stack.Screen name='Dashboard' component={Dashboard} options={{ headerShown: false}}/>
-          <Stack.Screen name='MainTab' children={mainTab} options={{ headerShown: false }}/>
+          <Stack.Screen name='MainTab' children={MainTab} options={{ headerShown: false }}/>
           <Stack.Screen name='Notes' component={Notes} />
           <Stack.Screen name='To Do List' component={Todo} />
           <Stack.Screen name='Encouragement Notes!' component={Encouragement} /> 

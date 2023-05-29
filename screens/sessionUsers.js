@@ -27,7 +27,7 @@ export default function SessionUsers() {
             screenOptions={{
               tabBarLabelStyle: { fontSize: 14 },
               tabBarLabelStyle: { color: '#f6f6f6'},
-              tabBarStyle: { backgroundColor: '#007788' },
+              tabBarStyle: { backgroundColor: '#007788', paddingTop: 50 },
               
             }}
           >
