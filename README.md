@@ -2,7 +2,7 @@
 STARdy App for Orbital 2023 (IOS Version/Run on MacOS)
 
 Instructions on how to test out:
-- Make sure you have xcode, expo, and NodeJS installed
+- Make sure you have xcode, expo, and NodeJS, VSCode installed
 - Run `xcode-select --install` to install xcode
 - Run `npx expo -h` to install expo.
 - Run  
