@@ -5,7 +5,7 @@ Instructions on how to test out:
 - Make sure you have xcode, expo, and NodeJS installed
 - Run `xcode-select --install` to install xcode
 - Run `npx expo -h` to install expo.
-- Run  `curl https://get.volta.sh | bash
+- Run  `curl https://get.volta.sh | bash`
 -       `source ~/.zshrc`
         `volta install node@18` to install NodeJS
 
